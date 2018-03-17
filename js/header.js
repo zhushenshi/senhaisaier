@@ -1,0 +1,35 @@
+/*标签栏动画*/
+$(()=>{
+	$("#header").load("header.html",()=>{
+		$("#nav-container>.nav-total>.nav-list").hover(
+			function(){
+				//下拉
+				console.log();
+				if(!$(this).children("div").is(":animated")){
+					$(this).children("div").slideDown();
+				}
+				//箭头变化
+				$(this).children("a").children("i").addClass("rotate");
+				//浏览全部动态变化
+				$("[data-arrow=right]").css({"left":"86px"});
+			},
+			function(){
+				$(this).children("div").slideUp();
+				$(this).children("a").children("i").removeClass("rotate");
+				$("[data-arrow=right]").css({"left":"126px"});
+			}
+		);
+		$("[data-toggle=arrow]").hover(
+			function(){
+				$("[data-arrow=right]").css({"left":"126px"});
+				$("[data-arrow=center]").css({"left":"44px"});
+				$("[data-arrow=left]").css({"left":"15px"});
+			},
+			function(){
+				$("[data-arrow=right]").css({"left":"86px"});
+				$("[data-arrow=center]").css({"left":"14px"});
+				$("[data-arrow=left]").css({"left":"-15px"});
+			}
+		)
+	})
+})

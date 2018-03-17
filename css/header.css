@@ -1,0 +1,197 @@
+/*页面顶部*/
+.header-container{
+	border-top:4px solid #1e96d4;
+}
+.header-container>.header-bar{
+	height:30px;
+	margin-top:5px;
+	overflow:hidden;
+}
+.header-container>.header-bar>ul>li{
+	float:right;
+	color:#acacac;
+	margin-left:15px;
+}
+.header-container>.header-bar>ul>li>a.space{
+	margin:0 10px
+}
+.header-container>.header-bar>ul>li>a>span>span.tel{
+	color:#1e96d4;
+}
+.header-container>.header-bar>ul>li>a{
+	color:#acacac;
+	line-height: 30px;
+	font-size:12px;
+	
+}
+.header-container>.header-bar>ul>li>a:hover{
+	color:#1e96d4;
+}
+.header-container>.header-bar>ul>li>a>span:hover{
+	color:#1e96d4;
+	text-decoration:underline;
+}
+/*logo&&搜索框*/
+.header-search{
+	height:75px;
+	display:flex;
+	justify-content:space-between;
+}
+.header-search>.header-logo{}
+.header-search>.search{
+	margin-top:10px;
+	position:relative;
+}
+.header-search>.search>input{
+	width:558px;
+	height:42px;
+	padding:5px 10px 5px 40px;
+	border:1px solid #000;
+	outline:none;
+	font-size: 16px;
+}
+/*搜索框的搜索图标*/
+.header-search>.search>a{
+	display:block;
+	color:#1e96d4;
+	font-weight:bold;
+	line-height:20px;
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+/*页面顶部菜单栏*/
+
+/*ul的div容器*/
+.nav-container{
+	height:40px;
+}
+/*总的ul*/
+.nav-container>.nav-total{
+    width:1200px;
+    margin:0 auto;
+    display:flex;
+}
+/*第一个列表的li*/
+.nav-container>.nav-total>.nav-list{
+    z-index:100;
+}
+/*第一个分类入耳式的a标记*/
+.nav-container>.nav-total>.nav-list>a{
+    line-height:42px;
+    display:block;
+    margin-right:40px;
+}
+/*箭头动画效果*/
+.nav-container>.nav-total>.nav-list>a>i:before{
+		display:inline-block;
+		transition:all .3s linear; 
+}
+.nav-container>.nav-total>.nav-list>a>i.rotate:before{
+		transform:rotate(-180deg);
+}
+.nav-container>.nav-total>.nav-list>.nav-box-container{
+    position:absolute;
+    width:100%;
+    left:0;
+    background:#EFEFEF;
+    display:none;
+}
+/*第一个列表的左右的容器*/
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum{
+    display:flex;
+    margin:0 auto;
+    width:1200px;
+    height:340px;
+}
+/*左侧容器*/
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-left{
+    width:190px;
+}
+/*左侧列表*/
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-left>.nav-left-ul{
+    padding:35px 15px 15px 10px;
+}
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-left>.nav-left-ul>li{
+    height:35px;
+}
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-left>.nav-left-ul>li>a{
+    line-height:35px;
+}
+/*最后一个li下的a标记*/
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-left>.nav-left-ul>li:last-child>a{
+    display:block;
+    color:#212121;
+    line-height:40px;
+    height:40px;
+    width:125px;
+    border:1px solid #000000;
+    margin-top:30px;
+	position:relative;
+	overflow:hidden;
+}
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-left>.nav-left-ul>li:last-child>a>span{
+	display:block;
+	transition:all .3s linear;
+	position:absolute;
+}
+/*右侧容器*/
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right{
+
+}
+/*列下面右侧的ul*/
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:36px;
+}
+/*列下面右侧的ul下的li*/
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li{
+    width:238px;
+    height:258px;
+    margin-right:10px;
+}
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li>a{
+    display:block;
+    position:relative;
+    text-align:center;
+}
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li>a>img{
+    width:238px;
+    background:#fff;
+}
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li>a>p{
+    line-height:40px;
+    width:100%;
+    background:#fff;
+    position:absolute;
+    bottom:-20px;
+    height:40px;
+    overflow:hidden;
+}
+/*最后一个图片的设置*/
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li:last-child>a>p{
+    background:none;
+    color:#fff;
+    overflow:hidden;
+    bottom:109px;
+    height:20px;
+    line-height:20px;
+    font-family:"microsoft yahei";/*似乎没有生效*/
+}
+/*最后一个图片的hover设置*/
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li:last-child>a{
+    width:238px;
+    height:238px;
+    overflow:hidden;
+    border-radius:50%;
+
+}
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li:last-child>a>img{
+    transition:all .5s linear;
+}
+.nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li:last-child>a>img:hover{
+    transform:scale(1.1);
+}

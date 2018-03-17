@@ -1,0 +1,98 @@
+/*页面底部布局*/
+.footer-container{
+	font-size:12px;
+}
+/*页面底部上部分信息*/
+.footer-container>.footer-top{
+	background:#000;
+	height:150px;
+	color:#bfbfbf;
+	box-sizing:border-box;
+	padding:25px;
+}
+.footer-container>.footer-top>.footer-help{
+	display:flex;
+	line-height:18px;
+	position:relative;
+}
+.footer-container>.footer-top>.footer-help>.help-dl{
+	margin-right:50px;
+}
+.footer-container>.footer-top>.footer-help>.help-service>dt>a.service{
+	background:#0085bf;
+	width:145px;
+	height:35px;
+	display:inline-block;
+	color:#fff;
+	font-size:14px;
+	position:relative;
+	margin-bottom:5px;
+}
+.footer-container>.footer-top>.footer-help>.weixin{
+	position:absolute;right:10px;
+	text-align:center;
+}
+.footer-container>.footer-top>.footer-help>.share-weixin{
+	position:absolute;right:95px;
+	text-align:center;
+}
+.footer-container>.footer-top>.footer-help>.code-weibo{
+	position:absolute;right:180px;
+	text-align:center;
+}
+.footer-container>.footer-top>.footer-help>dl>dd.text{
+	height:30px;
+	line-height:30px;
+}
+/*在线客服和联系图标*/
+.footer-container>.footer-top>.footer-help>.help-service>dt>a.service>i:before{
+	display:inline-block;
+	height:35px;
+	margin:7px 10px 0 15px;
+	font-size:20px;
+}
+.footer-container>.footer-top>.footer-help>.help-service>dt>a.service>span{
+	display:inline-block;
+	position:absolute;
+	left:45px;
+	top:7px;
+}
+.footer-container>.footer-top>.footer-help>.help-service>.help-phone{
+	color:#0096d6;
+	font-size:20px;
+	font-weight:bold;
+	line-height:28px;
+}
+.footer-container>.footer-top>.footer-help>.help-dl>dt:before{
+	content:"|";
+}
+.footer-container>.footer-top>.footer-help>.help-dl a{
+	color:#bfbfbf;
+}
+.footer-container>.footer-top>.footer-help>.help-dl>dd>a:hover{
+	color:#fff;
+	text-decoration:underline;
+}
+/*页面底部信息*/
+.footer-container>.footer-bottom{
+	margin:70px auto;
+	margin-bottom:65px;
+}
+.footer-container>.footer-bottom>.footer-logo{
+	display:block;
+	width:190px;
+	height:30px;
+	margin-bottom:18px;
+	background:url("../images/footer/footer-logo.png") no-repeat;
+}
+.footer-container>.footer-bottom>p{
+	line-height:18px;
+	color:#2b2b2b;
+}
+.footer-container>.footer-bottom>p>a{
+	color:#2b2b2b;
+}
+.footer-container>.footer-bottom>p>a:hover{
+	color:#2b2b2b;
+	text-decoration:underline;
+}
