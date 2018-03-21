@@ -85,7 +85,7 @@
 /*箭头动画效果*/
 .nav-container>.nav-total>.nav-list>a>i:before{
 		display:inline-block;
-		transition:all .3s linear; 
+		transition:all .3s linear;
 }
 .nav-container>.nav-total>.nav-list>a>i.rotate:before{
 		transform:rotate(-180deg);

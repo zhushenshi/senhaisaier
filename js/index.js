@@ -7,7 +7,10 @@ $(()=>{
 		$("[data-toogle=banner]").animate({
 			left:-width*moved
 		},1000,()=>{
+            // $("[data-toogle=banner]").stop(true);
             if(moved>=5){
+                $("[data-toogle=banner]").stop(true);
+                console.log(moved);
             	moved=1;
                 $("[data-toogle=banner]").css({left:-width});
 			}else if(moved<=0){
@@ -19,7 +22,7 @@ $(()=>{
 
 		})
 	};
-	console.log($("[data-toggle=banner-left]"));
+	// console.log($("[data-toggle=banner-left]"));
 	$("[data-toggle=banner-left]").click(()=>{
 		if(!$("[data-toogle=banner]").is(":animated")){
             moved++;
