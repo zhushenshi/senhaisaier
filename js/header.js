@@ -4,7 +4,6 @@ $(()=>{
 		$("#nav-container>.nav-total>.nav-list").hover(
 			function(){
 				//下拉
-				console.log();
 				if(!$(this).children("div").is(":animated")){
 					$(this).children("div").slideDown();
 				}

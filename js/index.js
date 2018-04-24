@@ -6,7 +6,7 @@ $(()=>{
 		var width=$("[data-toogle=banner]>li")[0].clientWidth;
 		$("[data-toogle=banner]").animate({
 			left:-width*moved
-		},1000,()=>{
+		},2000,()=>{
             // $("[data-toogle=banner]").stop(true);
             if(moved>=5){
                 $("[data-toogle=banner]").stop(true);

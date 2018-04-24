@@ -137,7 +137,7 @@
 }
 /*右侧容器*/
 .nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right{
-
+	
 }
 /*列下面右侧的ul*/
 .nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul{
@@ -155,8 +155,8 @@
 }
 .nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li>a{
     display:block;
+	text-align:center;
     position:relative;
-    text-align:center;
 }
 .nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li>a>img{
     width:238px;
@@ -179,7 +179,7 @@
     bottom:109px;
     height:20px;
     line-height:20px;
-    font-family:"microsoft yahei";/*似乎没有生效*/
+    font-family:"microsoft yahei";
 }
 /*最后一个图片的hover设置*/
 .nav-container>.nav-total>.nav-list>.nav-box-container>.nav-box-sum>.nav-right>.nav-right-ul>li:last-child>a{
